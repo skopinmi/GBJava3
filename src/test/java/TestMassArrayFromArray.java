@@ -1,4 +1,5 @@
 import lesson6.ArrayFromArray;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,12 +32,18 @@ public class TestMassArrayFromArray {
 
     @Before
     public void init () {
+        System.out.println("Start");
         arrayFromArray = new ArrayFromArray();
     }
 
     @Test
     public void test () {
         Assert.assertEquals(b, arrayFromArray.hasOneAndFour(a));
+    }
+
+    @After
+    public void print () {
+        System.out.println("The end");
     }
 
 }
