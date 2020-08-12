@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 
 
 
-public class IDoTest {
+public class Main {
     private Method[] methods;
     private Class cl;
     public static void start( Class a)  {
@@ -39,8 +39,8 @@ public class IDoTest {
                 end = arrayMethods[i];
             } else if (arrayMethods[i].isAnnotationPresent(Test.class)) {
                 result[count] = arrayMethods[i];
+                count++;
             }
-            count++;
         }
         temp = new Method[count];
         for(int i = 0; i < count; i++) {

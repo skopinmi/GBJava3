@@ -13,7 +13,6 @@ public class WhatITest {
                 arrayList.clear();
             }
         }
-        if (!hasFour) throw new RuntimeException();
         int [] result = new int[arrayList.size()];
         for (int i = 0; i < arrayList.size(); i ++) {
             result[i] = arrayList.get(i);
