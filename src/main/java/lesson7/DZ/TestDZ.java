@@ -58,7 +58,7 @@ public class TestDZ {
 //        return null;
 //    }
 
-//    public static Method[] getMethodsFromFile (File file, File folder) {
+//    private static Method[] getMethodsFromFile (File file, File folder) {
 //        Method[] methods = null;
 //        String[] tok = file.getName().split("\\.");
 //        Class ch = null;
